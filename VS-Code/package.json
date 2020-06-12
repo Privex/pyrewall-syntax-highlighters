@@ -1,0 +1,25 @@
+{
+    "name": "pyrewall-syntax-highlighting",
+    "displayName": "Pyrewall Syntax Highlighting",
+    "description": "Syntax highlighting for Privex Pyrewall configuration files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pyre",
+            "aliases": ["Pyrewall Configuration File", "pyre"],
+            "extensions": [".pyre"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pyre",
+            "scopeName": "text.pyre",
+            "path": "./syntaxes/pyre.tmLanguage.json"
+        }]
+    }
+}

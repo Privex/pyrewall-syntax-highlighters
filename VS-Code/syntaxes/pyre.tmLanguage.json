@@ -1,0 +1,46 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pyrewall Configuration File",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#remarks"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#tag"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "constant.language.pyre",
+				"match": "\\b(allow|deny|reject|drop)\\b"
+			}]
+		},
+		"remarks": {
+			"name": "comment.line.pyre",
+			"match": "\\b(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6|)\\b"
+		},
+		"comments": {
+			"name": "comment.line.pyre",
+			"match": "\\b(^|[[:space:]])#.*$\\b"
+		},
+		"constant": {
+			"name": "constant.numeric.pyre",
+			"match": "\\b\\.(\\d+\\W+)\\b"
+		},
+		"tag": {
+			"name": "entity.name.function.pyre",
+			"match": "\\b(to|from)\\b"
+		}
+	},
+	"scopeName": "text.pyre"
+}
