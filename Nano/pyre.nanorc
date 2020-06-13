@@ -7,15 +7,16 @@ header "^(.*)Pyrewall config file"
 
 ## Basic highlighting (colors can be changed according to taste
 color brightcyan "\\b()\\b"
-color green "\<(allow)\>"
-color brightred "\<(drop)\>"
-color red "\<(reject)\>"
-color blue "\<(to|from)\>"
+color brightgreen "\<^(allow)\>"
+color brightyellow "\<^(drop)\>"
+color brightred "\<^(reject)\>"
+color cyan "\<(to|from)\>"
 color brightblue "\<(all)\>"
-color cyan "\<(port|sport)\>"
-color brightgreen "\<(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6)\>"
+color blue "\<(port|sport)\>"
+color green "\<(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6)\>"
 color brightmagenta "\<(table|import|chain)\>"
+color brightmagenta "\<(table|chain)\>"
+color brightmagenta "\<(state|forward|import)\>"
 
 ## Advanced Highlighting
-color brightgreen "(^|[[:space:]])#.*$"
-
+color green "(^|[[:space:]])#.*$"
