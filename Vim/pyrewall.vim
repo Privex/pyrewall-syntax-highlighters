@@ -20,14 +20,18 @@ syn keyword remark remark rem rem4 remv4 remark4 remarkv4 rem6 remv6 remark6 rem
 syn keyword between from to
 syn keyword state state
 syn keyword all all
-syn match chain '@chain'
+syn match chain '@chain.*'
+syn match chain '@table.*'
+syn match chain '@import.*'
+syn match comment '#.*'
 
 " Highlighting Definitions
-hi allow guifg=#FFFFFF ctermfg=green
-hi drop guifg=#FFFFFF ctermfg=yellow
-hi reject guifg=#FFFFFF ctermfg=red
-hi between guifg=#FFFFFF ctermfg=blue
-hi misc guifg=#FFFFFF ctermfg=magenta
+hi allow ctermfg=green
+hi drop ctermfg=yellow
+hi reject ctermfg=red
+hi between ctermfg=blue
+hi misc ctermfg=magenta
+hi comment ctermbg=black ctermfg=darkgreen
 
 " Definition Linking
 hi def link port        misc
@@ -43,5 +47,6 @@ hi def link between     between
 hi def link state       misc
 hi def link all         misc
 hi def link chain       misc
+hi def link comment	comment
 
 let b:current_syntax = "pyre"
