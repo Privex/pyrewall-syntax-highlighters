@@ -4,7 +4,7 @@ Syntax Highlighters for [Pyrewall - Linux firewall tool written in Python](https
 
 # Screenshot of Nano (left) and Vim (right) syntax highlighting
 
-[![Screenshot of nano and vim syntax highlighting](https://cdn.privex.io/github/pyrewall/pyrewall-syntax-vim-nano.png)](https://cdn.privex.io/github/pyrewall/pyrewall-syntax-vim-nano.png)
+[![Screenshot of nano and vim syntax highlighting](https://cdn.discordapp.com/attachments/612057164038799362/721434730267934792/unknown.png)](https://cdn.discordapp.com/attachments/612057164038799362/721434730267934792/unknown.png)
 
 NOTE: The above screenshot was taken on the 13th of Jun 2020 at around 04:30 AM UTC-0.
 
