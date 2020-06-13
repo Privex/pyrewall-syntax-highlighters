@@ -47,4 +47,25 @@ If you want to install the syntax file globally, but it's not working after inst
 
 
 ## Nano
-1. Copy `pyrewall.nanorc` into your `/nano` folder. On Unix based systems, this can be found in `/usr/share/`.
+
+### Install locally (for your user only)
+
+Ensure the folder `~/.nano` exists, then download `pyrewall.nanorc` into that folder.
+
+```sh
+mkdir ~/.nano
+cd ~/.nano
+wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyrewall.nanorc
+```
+
+### Install globally into /usr/share/nano
+
+Copy `pyrewall.nanorc` into your `/nano` folder. On Unix based systems, this can be found in `/usr/share/`.
+
+Ensure the folder `/usr/share/nano` exists, then download `pyrewall.nanorc` into that folder.
+
+```sh
+sudo mkdir /usr/share/nano
+cd /usr/share/nano
+sudo wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyrewall.nanorc
+```
