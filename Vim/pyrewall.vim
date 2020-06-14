@@ -12,13 +12,11 @@ syn keyword port port sport
 syn keyword allow allow accept
 syn keyword drop drop
 syn keyword reject reject
-syn keyword forward forward
 syn keyword io if-in if-out
 syn keyword icmp4 icmp4 icmpv4
 syn keyword icmp6 icmp6 icmpv6
 syn keyword remark remark rem rem4 remv4 remark4 remarkv4 rem6 remv6 remark6 remarkv6
 syn keyword between from to all
-syn keyword state state
 syn match chain '@chain'
 syn match chain '@table'
 syn match chain '@import'
