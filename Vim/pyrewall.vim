@@ -17,8 +17,8 @@ syn keyword icmp4 icmp4 icmpv4
 syn keyword icmp6 icmp6 icmpv6
 syn keyword remark remark rem rem4 remv4 remark4 remarkv4 rem6 remv6 remark6 remarkv6
 syn keyword between from to all
-syn match chain '@chain'
-syn match chain '@table'
+syn match chain '@chain.*'
+syn match chain '@table.*'
 syn match chain '@import'
 syn match comment '#.*'
 

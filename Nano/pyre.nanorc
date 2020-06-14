@@ -14,9 +14,8 @@ color cyan "\<(to|from)\>"
 color brightblue "\<(all)\>"
 color blue "\<(port|sport)\>"
 color green "\<(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6)\>"
-color brightmagenta "\<(table|import|chain)\>"
-color brightmagenta "\<(table|chain)\>"
-color brightmagenta "\<(state|forward|import)\>"
+color brightmagenta "^\@(table|chain).*"
+color brightmagenta "\@(import)"
 
 ## Advanced Highlighting
 color green "(^|[[:space:]])#.*$"
