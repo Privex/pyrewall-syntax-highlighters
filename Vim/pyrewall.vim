@@ -9,17 +9,17 @@ endif
 
 " Keywords
 syn keyword port port sport
-syn keyword allow allow accept
-syn keyword drop drop
-syn keyword reject reject
+syn keyword allow allow accept ACCEPT
+syn keyword drop drop DROP
+syn keyword reject reject REJECT
 syn keyword io if-in if-out
 syn keyword icmp4 icmp4 icmpv4
 syn keyword icmp6 icmp6 icmpv6
 syn keyword remark remark rem rem4 remv4 remark4 remarkv4 rem6 remv6 remark6 remarkv6
-syn keyword between from to all
-syn match chain '@chain.*'
-syn match chain '@table.*'
-syn match chain '@import'
+syn keyword between from to all state chain from
+syn match chain '^@chain'
+syn match chain '^@table'
+syn match chain '^@import'
 syn match comment '#.*'
 
 " Highlighting Definitions
@@ -29,7 +29,7 @@ hi reject ctermfg=red
 hi between ctermfg=blue
 hi port ctermfg=darkblue
 hi misc ctermfg=magenta
-hi comment ctermbg=black ctermfg=darkgreen
+hi comment ctermfg=darkgreen
 
 " Definition Linking
 hi def link port        port
