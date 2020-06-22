@@ -1,45 +1,85 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Pyrewall Configuration File",
+	"name": "pyre",
 	"patterns": [
 		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#remarks"
+			"include": "#chain"
 		},
 		{
-			"include": "#comments"
+			"include": "#comment"
 		},
 		{
-			"include": "#constant"
+			"include": "#remark"
 		},
 		{
-			"include": "#tag"
+			"include": "#between"
+		},
+		{
+			"include": "#port"
+		},
+		{
+			"include": "#protocols"
+		},
+		{
+			"include": "#strings"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "constant.language.pyre",
-				"match": "\\b(allow|deny|reject|drop)\\b"
+				"name": "keyword.control.pyre",
+				"match": "(allow|deny|reject|drop)"
 			}]
 		},
-		"remarks": {
-			"name": "comment.line.pyre",
-			"match": "\\b(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6|)\\b"
+		"chain": {
+			"patterns": [{
+				"name": "constant.numeric.pyre",
+				"match": "(@chain|@table|@import)"
+			}]
 		},
-		"comments": {
-			"name": "comment.line.pyre",
-			"match": "\\b(^|[[:space:]])#.*$\\b"
+		"comment": {
+			"patterns": [{
+				"name": "comment.line.number-sign.pyre",
+				"match": "#.*"
+			}]
 		},
-		"constant": {
-			"name": "constant.numeric.pyre",
-			"match": "\\b\\.(\\d+\\W+)\\b"
+		"remark": {
+			"patterns": [{
+				"name": "comment.line.double-slash.pyre",
+				"match": "(remark|remark|rem|rem4|remv4|remark4|remarkv4|rem6|remv6|remark6|remarkv6)"
+			}]
 		},
-		"tag": {
-			"name": "entity.name.function.pyre",
-			"match": "\\b(to|from)\\b"
+		"between": {
+			"patterns": [{
+				"name": "constant.language.pyre",
+				"match": "(from|to|all|state|chain)"
+			}]
+		},	
+		"port": {
+			"patterns": [{
+				"name": "string.others.pyre",
+				"match": "(port|sport)"
+			}]
+		},	
+		"protocols": {
+			"patterns": [{
+				"name": "storage.type.pyre",
+				"match": "(icmp4|icmpv4|icmp6|icmpv6)"
+			}]
+		},	
+		"strings": {
+			"name": "string.quoted.double.pyre",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pyre",
+					"match": "\\\\."
+				}
+			]
 		}
 	},
 	"scopeName": "text.pyre"
