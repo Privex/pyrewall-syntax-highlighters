@@ -65,7 +65,7 @@ Ensure the folder `~/.nano` exists, then download `pyrewall.nanorc` into that fo
 ```sh
 mkdir ~/.nano
 cd ~/.nano
-wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyrewall.nanorc
+wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyre.nanorc
 ```
 
 ### Install globally into /usr/share/nano
@@ -77,5 +77,5 @@ Ensure the folder `/usr/share/nano` exists, then download `pyrewall.nanorc` into
 ```sh
 sudo mkdir /usr/share/nano
 cd /usr/share/nano
-sudo wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyrewall.nanorc
+sudo wget https://raw.githubusercontent.com/Privex/pyrewall-syntax-highlighters/master/Nano/pyre.nanorc
 ```
